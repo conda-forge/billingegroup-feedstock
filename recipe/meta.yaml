@@ -23,7 +23,9 @@ requirements:
     - pyyaml
     - pandas
     - jupyter
-    - pyfai  # [linux]
+    - pyfai  # [not win]
+    - fire
+    - ipython
 
 test:
   imports:
@@ -36,7 +38,9 @@ test:
     - yaml
     - pandas
     - jupyter
-    - pyFAI  # [linux]
+    - pyFAI  # [not win]
+    - fire
+    - ipython
 
 about:
   home: https://thebillingegroup.com/
