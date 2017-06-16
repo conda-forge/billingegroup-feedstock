@@ -40,7 +40,6 @@ test:
     - jupyter
     - pyFAI  # [not win]
     - fire
-    - ipython
 
 about:
   home: https://thebillingegroup.com/
