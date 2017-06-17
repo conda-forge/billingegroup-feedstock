@@ -7,6 +7,7 @@ package:
 
 build:
   number: 0
+  skip: True  # [win and py36]
 
 requirements:
   build:
