@@ -1,13 +1,13 @@
 {% set name = "billingegroup" %}
-{% set version = "1" %}
+{% set version = "2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 build:
-  skip: True  # [win]
   number: 0
+  skip: True  # [win and py36]
 
 requirements:
   build:
@@ -23,7 +23,9 @@ requirements:
     - pyyaml
     - pandas
     - jupyter
-    - pyfai  # [linux]
+    - pyfai  # [not win]
+    - fire
+    - ipython
 
 test:
   imports:
@@ -36,7 +38,8 @@ test:
     - yaml
     - pandas
     - jupyter
-    - pyFAI  # [linux]
+    - pyFAI  # [not win]
+    - fire
 
 about:
   home: https://thebillingegroup.com/
