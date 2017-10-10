@@ -7,7 +7,7 @@ package:
 
 build:
   number: 0
-  skip: True  # [win and py36]
+  skip: True  # [win]
 
 requirements:
   build:
@@ -26,6 +26,7 @@ requirements:
     - pyfai  # [not win]
     - fire
     - ipython
+    - scikit-beam
 
 test:
   imports:
@@ -40,6 +41,7 @@ test:
     - jupyter
     - pyFAI  # [not win]
     - fire
+    - skbeam
 
 about:
   home: https://thebillingegroup.com/
