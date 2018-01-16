@@ -1,13 +1,13 @@
 {% set name = "billingegroup" %}
-{% set version = "2" %}
+{% set version = "3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 build:
+  noarch: python
   number: 0
-  skip: True  # [win]
 
 requirements:
   build:
@@ -23,7 +23,7 @@ requirements:
     - pyyaml
     - pandas
     - jupyter
-    - pyfai  # [not win]
+    - pyfai
     - fire
     - ipython
     - scikit-beam
@@ -39,13 +39,14 @@ test:
     - yaml
     - pandas
     - jupyter
-    - pyFAI  # [not win]
+    - pyFAI
     - fire
     - skbeam
 
 about:
   home: https://thebillingegroup.com/
   summary: 'Metapackage for the Billinge Group'
+  license: NA
 
 extra:
   recipe-maintainers:
