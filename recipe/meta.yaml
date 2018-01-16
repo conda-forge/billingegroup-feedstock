@@ -46,6 +46,7 @@ test:
 about:
   home: https://thebillingegroup.com/
   summary: 'Metapackage for the Billinge Group'
+  license: NA
 
 extra:
   recipe-maintainers:
