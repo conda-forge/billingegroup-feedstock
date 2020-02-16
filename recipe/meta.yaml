@@ -7,7 +7,7 @@ package:
 
 build:
   noarch: python
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -16,7 +16,7 @@ requirements:
     - python
     - numpy
     - scipy
-    - matplotlib
+    - matplotlib-base
     - seaborn
     - fabio
     - pims
@@ -32,7 +32,7 @@ test:
   imports:
     - numpy
     - scipy
-    - matplotlib
+    - matplotlib-base
     - seaborn
     - fabio
     - pims
