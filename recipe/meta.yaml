@@ -7,13 +7,13 @@ package:
 
 build:
   noarch: python
-  number: 0
+  number: 1
 
 requirements:
-  build:
-    - python
+  host:
+    - python {{ python_min }}
   run:
-    - python
+    - python >={{ python_min }}
     - numpy
     - scipy
     - matplotlib
@@ -29,6 +29,8 @@ requirements:
     - scikit-beam
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - numpy
     - scipy
